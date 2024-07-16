@@ -122,7 +122,7 @@ namespace Assm4_OOP
 
             #region Deep copy heap
 
-            Arr02 = (int[]) Arr01.Clone();
+            //Arr02 = (int[]) Arr01.Clone();
 
             //Console.WriteLine("\nAfter Deep Copy");
 
@@ -147,6 +147,62 @@ namespace Assm4_OOP
             #endregion
 
 
+            #region Array of Refrence Type
+
+            #region Arry of String [Immutable Type]
+
+            //string[] Names01 = { "Ahmed" };
+            //string[] Names02 = new string[1];
+
+            //Console.WriteLine($"HC of Names01 = {Names01.GetHashCode()}");
+            //Console.WriteLine($"HC of Names02 = {Names02.GetHashCode()}");
+
+
+            #region Shallow Copy
+            //Names02 = Names01;
+
+            //Console.WriteLine("\nAfter Copy");
+            //      Console.WriteLine($"HC of Names01 = {Names01.GetHashCode()}");
+            //Console.WriteLine($"HC of Names02 = {Names02.GetHashCode()}");
+
+            //Console.WriteLine($"Name01 = {Names01[0]}");
+            //Console.WriteLine($"Name02 = {Names02[0]}");
+
+            //Names02[0] = "Hany";
+
+            //Console.WriteLine($"Name01 = {Names01[0]}");
+            //Console.WriteLine($"Name02 = {Names02[0]}");
+            #endregion
+
+            #region Deep Copy
+
+            //Names02 = (string[]) Names01.Clone();
+
+            //Console.WriteLine("\nAfter Deep Copy");
+            //Console.WriteLine($"HC of Names01 = {Names01.GetHashCode()}");
+            //Console.WriteLine($"HC of Names02 = {Names02.GetHashCode()}");
+
+            //Console.WriteLine($"Name01 = {Names01[0]}");
+            //Console.WriteLine($"Name02 = {Names02[0]}");
+
+            //Names02[0] = "Hany";
+            //Console.WriteLine($"Name01 = {Names01[0]}");
+            //Console.WriteLine($"Name02 = {Names02[0]}");
+            #endregion
+
+
+
+            #endregion
+
+            #endregion
+
+            #region
+
+            #endregion
+
+            #region
+
+            #endregion
 
             #region
 
