@@ -1,4 +1,5 @@
 ﻿using Assm4_OOP.Interfaces;
+using System.Text;
 
 namespace Assm4_OOP
 {
@@ -146,7 +147,6 @@ namespace Assm4_OOP
 
             #endregion
 
-
             #region Array of Refrence Type
 
             #region Arry of String [Immutable Type]
@@ -196,13 +196,53 @@ namespace Assm4_OOP
 
             #endregion
 
-            #region
+            #region Array of StringBuilder [Mutable type]
+
+            //StringBuilder[] Name01 = new StringBuilder[1];
+            //Name01[0] = new StringBuilder("Ahmed");
+
+            //StringBuilder[] Name02 = new StringBuilder[1];
+
+
+            //Console.WriteLine($"HC ofNames01 = {Name01.GetHashCode()}");
+            //Console.WriteLine($"HC ofNames02 = {Name02.GetHashCode()}");
+
+            #region Shallow Copy
+            //Name02 = Name01;
+
+            //Console.WriteLine("\nAfter Shallow Copy");
+            //Console.WriteLine($"HC ofNames01 = {Name01.GetHashCode()}");
+            //Console.WriteLine($"HC ofNames02 = {Name02.GetHashCode()}");
+
+
+            //Name01 = Name02;
+            //Console.WriteLine($"Name01 = {Name01[0]}");
+            //Console.WriteLine($"Name02 = {Name02[0]}");
+            #endregion
+
+
+            #region Deep Copy [Heap]
+
+            //Name02 = (StringBuilder[]) Name01.Clone();
+
+
+            //Console.WriteLine("\nAfter Deep Copy");
+
+            //Console.WriteLine($"HC ofNames01 = {Name01.GetHashCode()}");
+            //Console.WriteLine($"HC ofNames02 = {Name02.GetHashCode()}");
+
+            //Console.WriteLine($"Name01 = {Name01[0]}");
+            //Console.WriteLine($"Name02 = {Name02[0]}");
+
+            //Name02[0].Append("Hany");
+            //Console.WriteLine($"Name01 = {Name01[0]}");
+            //Console.WriteLine($"Name02 = {Name02[0]}");
 
             #endregion
 
-            #region
 
             #endregion
+
 
             #region
 
