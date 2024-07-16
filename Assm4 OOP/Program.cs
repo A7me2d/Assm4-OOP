@@ -50,27 +50,40 @@ namespace Assm4_OOP
 
             #region Interface Ex 01
 
-            SeriesByTwo seriesByTwo = new SeriesByTwo();
+            //SeriesByTwo seriesByTwo = new SeriesByTwo();
 
-            Print10NumberFromSeries (seriesByTwo);
+            //Print10NumberFromSeries (seriesByTwo);
 
 
-            Console.WriteLine("\n===============");
+            //Console.WriteLine("\n===============");
 
-            SeriesByThree seriesByThree = new SeriesByThree();
-            Print10NumberFromSeries(seriesByThree);
+            //SeriesByThree seriesByThree = new SeriesByThree();
+            //Print10NumberFromSeries(seriesByThree);
 
             
-            Console.WriteLine("\n===============");
+            //Console.WriteLine("\n===============");
 
-            SeriesByFour seriesByFour = new SeriesByFour();
-            Print10NumberFromSeries(seriesByFour);
+            //SeriesByFour seriesByFour = new SeriesByFour();
+            //Print10NumberFromSeries(seriesByFour);
 
 
 
             #endregion
 
-            #region
+            #region Interface Ex 02
+
+            //Car car = new Car();
+            //car.Backward();
+
+
+            //Airplane airplane = new Airplane();
+            //airplane.Backward();
+            ////airplane.Backward();
+
+            //IMoveble movebleplane = new Airplane();
+            //movebleplane.Forwerd();
+
+            
 
             #endregion
 
