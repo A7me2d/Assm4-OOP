@@ -4,19 +4,19 @@ namespace Assm4_OOP
 {
     internal class Program
     {
-        public static void Print10NumberFromSeries(ISerris series)
-        {
-            if (series is not null) {
+        //public static void Print10NumberFromSeries(ISerris series)
+        //{
+        //    if (series is not null) {
 
-                for (int i = 0; i < 10; i++) {
-                    Console.WriteLine($"{series.Current}");
-                    series.GetNext();
-                }
-                series.Reset();
+        //        for (int i = 0; i < 10; i++) {
+        //            Console.WriteLine($"{series.Current}");
+        //            series.GetNext();
+        //        }
+        //        series.Reset();
             
-            }
+        //    }
             
-            }
+        //    }
         static void Main(string[] args)
         {
 
@@ -60,7 +60,7 @@ namespace Assm4_OOP
             //SeriesByThree seriesByThree = new SeriesByThree();
             //Print10NumberFromSeries(seriesByThree);
 
-            
+
             //Console.WriteLine("\n===============");
 
             //SeriesByFour seriesByFour = new SeriesByFour();
@@ -83,17 +83,70 @@ namespace Assm4_OOP
             //IMoveble movebleplane = new Airplane();
             //movebleplane.Forwerd();
 
-            
+
 
             #endregion
 
-            #region
+            #region Shallow Copy And Deep Copy
+
+            #region Arry of value type
+            //int[] Arr02 = { 1, 2, 3 };
+            //int[] Arr01 = new int[3];
+
+            //Console.WriteLine($"HC OF Arr01 = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"HC OF Arr02 = {Arr02.GetHashCode()}");
+
+
+
+
+            #region Shallow Copy Stack
+
+            //Arr01 = Arr02;
+            //Console.WriteLine("\nAfter Shallow");
+
+            //Console.Write($"HC OF Arr01 = {Arr01.GetHashCode()}");
+            //Console.Write($"HC OF Arr02 = {Arr02.GetHashCode()}");
+
+
+            //Console.Write($"Arr02 = {Arr02[0]}");
+            //Console.Write($"Arr01 = {Arr01[0]}");
+
+            //Arr02[0] = 100;
+
+            //Console.WriteLine("\nAfter Arr02 = 100");
+
+            //Console.Write($"Arr02 = {Arr02[0]}");
+            //Console.Write($"Arr01 = {Arr01[0]}");
+            #endregion
+
+
+            #region Deep copy heap
+
+            Arr02 = (int[]) Arr01.Clone();
+
+            //Console.WriteLine("\nAfter Deep Copy");
+
+            //Console.WriteLine($"HC OF Arr01 = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"HC OF Arr02 = {Arr02.GetHashCode()}");
+
+            //Console.WriteLine($"Arr01 = {Arr01[0]}");
+            //Console.WriteLine($"Arr02 = {Arr02[0]}");
+
+            //Arr01[0] = 100;
+
+            //Console.WriteLine("\nAfter Arr01 = 100");
+            //Console.WriteLine($"Arr01 = {Arr01[0]}");
+            //Console.WriteLine($"Arr02 = {Arr02[0]}");
+
 
             #endregion
 
-            #region
 
             #endregion
+
+            #endregion
+
+
 
             #region
 

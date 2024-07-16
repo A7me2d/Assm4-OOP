@@ -10,7 +10,7 @@ namespace Assm4_OOP.Interfaces
     {
         public int Current { get; set; }
 
-        public void GetNext();
+        //public void GetNext();
       
         public void Reset()
         {
