@@ -1,4 +1,5 @@
-﻿using Assm4_OOP.Interfaces;
+﻿using Assm4_OOP.ICloneblae_Interface;
+using Assm4_OOP.Interfaces;
 using System.Text;
 
 namespace Assm4_OOP
@@ -244,7 +245,138 @@ namespace Assm4_OOP
             #endregion
 
 
-            #region
+            #region Shallow Copy and Deep Copy
+
+            //Emploee employee01 = new Emploee() { Id = 10, Name = "Ahmed", Salary = 9000 };
+            //Emploee employee02 = new Emploee() { Id = 20, Name = "Hany", Salary = 1200 };
+
+            //Emploee employee01 = new Emploee() { Id = 10, Name = new StringBuilder("Ahmed"), Salary =  9000 };
+            //Emploee employee02 = new Emploee() { Id = 20, Name = new StringBuilder("Hany") , Salary = 1200 };
+
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}"); 
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            //employee01.Id = 100;
+            //employee01.Name = "makram";
+            //employee01.Salary = 12355;
+
+            //Console.WriteLine("After Change Value");
+            //Console.WriteLine($"Emp01 {employee01}");
+            //Console.WriteLine($"Emp02 {employee02}");
+
+
+            #region Shallow Copy And Deep Copy
+
+
+            #region Shallow Copy [Stack]
+            //employee02 = employee01;
+
+            //Console.WriteLine("After Shalow Copy");
+
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}"); 
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            //employee01.Id = 100;
+            //employee01.Name.Append = ("hany");
+            //employee01.Salary = 20000;
+
+
+            //Console.WriteLine("=======After Changing Employee01 Values=====");
+            //Console.WriteLine($"Emp01 = {employee01}"); 
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+
+
+
+            #endregion
+
+            #region Shallow Copy - Name is string builder
+
+            //employee02 = employee01;
+
+            //Console.WriteLine("After Shallow Copy");
+
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}"); 
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            //employee01.Id = 100;
+            //employee01.Name.Append = ("hany");
+            //employee01.Salary = 20000;
+
+
+            //Console.WriteLine("=======After Changing Employee01 Values=====");
+            //Console.WriteLine($"Emp01 = {employee01}"); 
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            #endregion
+
+            #region Deep copy - name is String
+
+            //employee02  = (Emploee)employee01.Clone();
+
+            //Console.WriteLine("After Deep Copy");
+
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}");
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            //employee02.Id = 200;
+            //employee02.Name = "Makram";
+            //employee02.Salary = 30000;
+
+            //Console.WriteLine("After Changing Employee02 values");
+            //Console.WriteLine(employee01);
+            //Console.WriteLine(employee02);
+
+            #endregion
+
+            #region Deep Copy - name is StringBuilder
+            //employee02 = (Emploee)employee01.Clone();
+            //Console.WriteLine("After Deep Copy");
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}");
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            //employee02.Id = 500;
+            //employee02.Name.Append("Hany");
+            //employee02.Salary = 6000;
+
+            //Console.WriteLine("After Changing Employee02 Value");
+            //Console.WriteLine(employee01);
+            //Console.WriteLine(employee02);
+            #endregion
+
+
+            //employee02 = new Emploee(employee01);
+
+            //Console.WriteLine("After Deep Copy");
+
+            //Console.WriteLine($"HC OF Empo01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"Emp01 = {employee01}");
+
+
+            //Console.WriteLine($"HC OF Empo02 {employee02.GetHashCode()}");
+            //Console.WriteLine($"Emp02 = {employee02}");
+
+            #endregion
 
             #endregion
 
