@@ -380,6 +380,47 @@ namespace Assm4_OOP
 
             #endregion
 
+            #region Built in Interface Icomareable
+            //int[] Number = { 9, 6, 4, 8, 5, 3, 2, 7, 1, 10 };
+            //Array.Sort(Number);
+
+            //foreach (int Num in Number)
+            //{
+            //    Console.WriteLine(Num);
+            //}
+
+            //Emploee[] emploees = new Emploee[4]
+            //{
+            //    new Emploee(){Id = 10 , Name = "Ahmed" , Salary = 10000},
+            //    new Emploee(){Id = 20 , Name = "Hany" , Salary = 20000},
+            //    new Emploee(){Id = 30 , Name = "Makram" , Salary = 30000},
+            //    new Emploee(){Id = 40 , Name = "Mohamed" , Salary = 40000}
+            //};
+
+            //Array.Sort(emploees);
+
+            //for (int i = 0; i < emploees.Length; i++)
+            //{
+            //    for (int K = 0; K < emploees.Length - i - 1; K++)
+            //    {
+            //        if (emploees[K].CompareTo(emploees[K + 1 ]) == 1)
+            //            SWAP(emploees[K], emploees[K + 1]);
+            //    }
+            //}
+
+
+
+
+            //foreach (Emploee emp in emploees)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
+            //Console.WriteLine(emploees[0].CompareTo(emploees[1]));
+            #endregion
+
+
+
 
         }
     }

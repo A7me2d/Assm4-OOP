@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assm4_OOP.ICloneblae_Interface
 {
-    internal class Emploee : ICloneable
+    internal class Emploee : ICloneable , IComparable
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -31,6 +31,18 @@ namespace Assm4_OOP.ICloneblae_Interface
         public override string ToString()
         {
             return $"id = {Id} , Name = {Name} , Salary = {Salary}";
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Emploee PassedEmployees = (Emploee)obj;
+            if (this.Salary > PassedEmployees.Salary)
+                return 1;
+            else if (this.Salary < PassedEmployees.Salary)
+                return -1;
+            else
+                return 0;
+
         }
     }
 }
