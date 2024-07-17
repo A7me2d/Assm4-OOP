@@ -397,7 +397,7 @@ namespace Assm4_OOP
             //    new Emploee(){Id = 40 , Name = "Mohamed" , Salary = 40000}
             //};
 
-            //Array.Sort(emploees);
+            //Array.Sort(emploees , new EmployeeIdComparer());
 
             //for (int i = 0; i < emploees.Length; i++)
             //{
@@ -418,9 +418,6 @@ namespace Assm4_OOP
 
             //Console.WriteLine(emploees[0].CompareTo(emploees[1]));
             #endregion
-
-
-
 
         }
     }
