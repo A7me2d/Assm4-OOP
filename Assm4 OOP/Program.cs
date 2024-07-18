@@ -30,6 +30,22 @@ namespace Assm4_OOP
 
             #endregion
 
+            #region Part02 Q2
+            //IAuthenticationService authService = new BasicAuthenticationService();
+
+            //bool isAuthenticated = authService.AuthenticateUser("user1", "password1");
+            //Console.WriteLine($"Authentication result for user1: {isAuthenticated}");
+
+            //isAuthenticated = authService.AuthenticateUser("user1", "wrongpassword");
+            //Console.WriteLine($"Authentication result for user1 with wrong password: {isAuthenticated}");
+
+            //bool isAuthorized = authService.AuthorizeUser("user1", "admin");
+            //Console.WriteLine($"Authorization result for user1 as admin: {isAuthorized}");
+
+            //isAuthorized = authService.AuthorizeUser("user2", "admin");
+            //Console.WriteLine($"Authorization result for user2 as admin: {isAuthorized}");
+
+            #endregion
         }
     }
 }
