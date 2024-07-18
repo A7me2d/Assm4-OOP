@@ -46,6 +46,18 @@ namespace Assm4_OOP
             //Console.WriteLine($"Authorization result for user2 as admin: {isAuthorized}");
 
             #endregion
+
+            #region Part02 Q3
+            INotificationService emailService = new EmailNotificationService();
+            INotificationService smsService = new SmsNotificationService();
+            INotificationService pushService = new PushNotificationService();
+
+
+            emailService.SendNotification("email@example.com", "This is an email message.");
+            smsService.SendNotification("123-456-7890", "This is an SMS message.");
+            pushService.SendNotification("user123", "This is a push notification message.");
+
+            #endregion
         }
     }
 }
