@@ -1,4 +1,7 @@
-﻿namespace Assm4_OOP
+﻿using Assm4_OOP.Class;
+using Assm4_OOP.Interfaces;
+
+namespace Assm4_OOP
 {
     internal class Program
     {
@@ -16,6 +19,17 @@
             //Q9 ======> (b);
             //Q10 ======> (c);
             #endregion
+
+            #region Part02 Q1
+            //ICircle circle = new Circle(5);
+            //IRectangle rectangle = new Rectangle(4, 6);
+
+            //circle.DisplayShapeInfo();
+            //Console.WriteLine();
+            //rectangle.DisplayShapeInfo();
+
+            #endregion
+
         }
     }
 }
